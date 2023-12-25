@@ -1,0 +1,12 @@
+<div class="login-page text-center mt-5">
+    <h1 class="Heading abc w-50">Welcome to Justice League</h1>
+    <form [formGroup]="loginForm" class="w-50" (ngSubmit)="onSubmit()">
+        <div class="abc form-group">
+            <label class="Heading xyz w-100" for="userName">UserName</label>
+            <input class="form-control" type='text' formControlName="userName">
+            <label class="Heading xyz" for="password">Password</label>
+            <input class="form-control" type='password' formControlName="password">
+        </div>
+        <button class="btn btn-success w-50 mt-5" [disabled]="!loginForm.valid" type="submit">Login</button>
+    </form>
+</div>
